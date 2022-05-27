@@ -2,7 +2,7 @@
 setwd("/Users/hannes/Desktop/R Kurs/block_2")
 HairEyeData<-readRDS("2_HairEyeData.rds")
 library(ggplot2)
-----------------------------------------------------------
+
 #Balkendiagramm erstellen und Legende
 ggplot(data = HairEyeData, aes(x=Sex,fill=Sex)) +
   #Rahmenfarbe zuordnen
