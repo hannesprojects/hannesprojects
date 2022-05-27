@@ -1,8 +1,10 @@
-HairEyeData<-HED
+#Arbeitsverzeichnis setzen
+setwd("/Users/hannes/Desktop/R Kurs/block_2")
+HairEyeData<-readRDS("2_HairEyeData.rds")
 library(ggplot2)
 ----------------------------------------------------------
-  #Balkendiagramm erstellen und Legende
-  ggplot(data = HairEyeData, aes(x=Sex,fill=Sex)) +
+#Balkendiagramm erstellen und Legende
+ggplot(data = HairEyeData, aes(x=Sex,fill=Sex)) +
   #Rahmenfarbe zuordnen
   geom_bar(color="black") +
   #Einzelne Farben den Balen zuordnen
